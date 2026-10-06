@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore Pushkar - a beautiful spiritual town of Rajasthan famous for Pushkar Lake, Brahma Temple and its colourful culture.">
+
+    <title>Pushkar | TOURISTIC</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .city-hero {
+            min-height: 65vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    rgba(25, 15, 25, 0.55),
+                    rgba(25, 15, 25, 0.55)
+                ),
+                url("https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .city-hero-content {
+            max-width: 850px;
+            margin-left: 8%;
+            padding: 70px 20px;
+            color: white;
+        }
+
+        .city-hero h1 {
+            font-size: clamp(48px, 7vw, 80px);
+            line-height: 1;
+            margin: 15px 0 20px;
+        }
+
+        .city-hero p {
+            max-width: 650px;
+            font-size: 18px;
+            color: #f5eee8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #f0b85b;
+            font-weight: 700;
+        }
+
+        .city-intro {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .city-intro h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .city-intro p {
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+
+        .attraction-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .attraction-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .attraction-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .attraction-content {
+            padding: 22px;
+        }
+
+        .attraction-content h3 {
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+
+        .attraction-content p {
+            color: var(--text);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .info-box {
+            padding: 30px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .info-box h3 {
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+
+        @media (max-width: 800px) {
+            .attraction-grid,
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .city-hero-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="../index.html">TOURISTIC</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav id="navMenu">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#destinations">Destinations</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#culture">Culture</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="city-hero">
+
+        <div class="city-hero-content">
+
+            <p class="small-title">
+                SPIRITUAL HEART OF RAJASTHAN
+            </p>
+
+            <h1>Pushkar</h1>
+
+            <p>
+                Discover the spiritual charm of Pushkar,
+                famous for its sacred lake, ancient temples,
+                colourful streets and vibrant local culture.
+            </p>
+
+            <a href="../index.html" class="back-link">
+                ← Back to TOURISTIC
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="section">
+
+        <div class="city-intro">
+
+            <p class="small-title">
+                ABOUT PUSHKAR
+            </p>
+
+            <h2>
+                A Sacred Town
+            </h2>
+
+            <p>
+                Pushkar is one of Rajasthan's most famous
+                spiritual destinations. The town surrounds
+                the beautiful Pushkar Lake and is known for
+                its peaceful atmosphere.
+            </p>
+
+            <p>
+                With its temples, colourful markets and
+                traditional culture, Pushkar offers a unique
+                experience for travellers.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ATTRACTIONS -->
+
+    <section class="section destinations">
+
+        <div class="section-title">
+
+            <p class="small-title">
+                MUST VISIT
+            </p>
+
+            <h2>
+                Famous Attractions
+            </h2>
+
+        </div>
+
+
+        <div class="attraction-grid">
+
+            <article class="attraction-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1715168931029-2949161ee406?auto=format&fit=crop&w=900&q=80"
+                    alt="Pushkar Lake">
+
+                <div class="attraction-content">
+
+                    <h3>Pushkar Lake</h3>
+
+                    <p>
+                        A sacred lake surrounded by temples and
+                        ghats where visitors can experience the
+                        peaceful spiritual atmosphere of Pushkar.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="attraction-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1654004924301-90c23a3b7279?auto=format&fit=crop&w=900&q=80"
+                    alt="Brahma Temple Pushkar">
+
+                <div class="attraction-content">
+
+                    <h3>Brahma Temple</h3>
+
+                    <p>
+                        One of the most famous temples in Pushkar,
+                        dedicated to Lord Brahma and an important
+                        part of the town's spiritual heritage.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="attraction-card">
+
+                <img
+    src="https://images.unsplash.com/photo-1717917197052-fda91a7e003c?auto=format&fit=crop&w=900&q=80"
+    alt="Pushkar Market"
+>
+
+                <div class="attraction-content">
+
+                    <h3>Pushkar Market</h3>
+
+                    <p>
+                        Explore colourful streets filled with
+                        handicrafts, traditional clothes, jewellery,
+                        souvenirs and local products.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRAVEL GUIDE -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p class="small-title">
+                TRAVEL GUIDE
+            </p>
+
+            <h2>
+                Pushkar at a Glance
+            </h2>
+
+        </div>
+
+
+        <div class="info-grid">
+
+            <div class="info-box">
+
+                <h3>🛕 Culture</h3>
+
+                <p>
+                    Visit temples, explore the ghats and
+                    experience the peaceful spiritual culture
+                    of Pushkar.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>🍛 Food</h3>
+
+                <p>
+                    Enjoy local vegetarian food, traditional
+                    Rajasthani dishes and popular street snacks.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>🛍️ Shopping</h3>
+
+                <p>
+                    Discover colourful textiles, jewellery,
+                    handicrafts and traditional Rajasthani items.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>TOURISTIC</h2>
+
+                <p>
+                    Explore. Experience. Remember Rajasthan.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="../index.html">Home</a>
+
+                <a href="../index.html#destinations">
+                    Destinations
+                </a>
+
+                <a href="../index.html#about">
+                    About
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Destination</h3>
+
+                <p>Pushkar</p>
+                <p>Rajasthan, India</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TOURISTIC. All Rights Reserved.
+            </p>
+
+            <p>
+                Student Web Development Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

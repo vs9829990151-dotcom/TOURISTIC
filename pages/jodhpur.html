@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore Jodhpur - the Blue City of Rajasthan. Discover Mehrangarh Fort, markets, food and culture.">
+
+    <title>Jodhpur | TOURISTIC</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .city-hero {
+            min-height: 65vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    rgba(10, 15, 25, 0.58),
+                    rgba(10, 15, 25, 0.58)
+                ),
+                url("https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .city-hero-content {
+            max-width: 850px;
+            margin-left: 8%;
+            padding: 70px 20px;
+            color: white;
+        }
+
+        .city-hero h1 {
+            font-size: clamp(48px, 7vw, 80px);
+            line-height: 1;
+            margin: 15px 0 20px;
+        }
+
+        .city-hero p {
+            max-width: 650px;
+            font-size: 18px;
+            color: #f5eee8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #f0b85b;
+            font-weight: 700;
+        }
+
+        .city-intro {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .city-intro h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .city-intro p {
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+
+        .attraction-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .attraction-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .attraction-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .attraction-content {
+            padding: 22px;
+        }
+
+        .attraction-content h3 {
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+
+        .attraction-content p {
+            color: var(--text);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .info-box {
+            padding: 30px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .info-box h3 {
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+
+        @media (max-width: 800px) {
+            .attraction-grid,
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .city-hero-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="../index.html">TOURISTIC</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav id="navMenu">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#destinations">Destinations</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#culture">Culture</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="city-hero">
+
+        <div class="city-hero-content">
+
+            <p class="small-title">
+                THE BLUE CITY
+            </p>
+
+            <h1>Jodhpur</h1>
+
+            <p>
+                Discover the Blue City of Rajasthan, famous for
+                the mighty Mehrangarh Fort, blue-painted houses,
+                colourful markets and royal history.
+            </p>
+
+            <a href="../index.html" class="back-link">
+                ← Back to TOURISTIC
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="section">
+
+        <div class="city-intro">
+
+            <p class="small-title">
+                ABOUT JODHPUR
+            </p>
+
+            <h2>
+                The Blue City
+            </h2>
+
+            <p>
+                Jodhpur is one of Rajasthan's most fascinating
+                cities. The old city is known for its blue
+                houses and narrow colourful streets.
+            </p>
+
+            <p>
+                Dominating the city skyline is Mehrangarh Fort,
+                one of the most impressive historic forts in
+                Rajasthan.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ATTRACTIONS -->
+
+    <section class="section destinations">
+
+        <div class="section-title">
+
+            <p class="small-title">
+                MUST VISIT
+            </p>
+
+            <h2>
+                Famous Attractions
+            </h2>
+
+        </div>
+
+
+        <div class="attraction-grid">
+
+            <article class="attraction-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=900&q=80"
+                    alt="Mehrangarh Fort">
+
+                <div class="attraction-content">
+
+                    <h3>Mehrangarh Fort</h3>
+
+                    <p>
+                        A massive hilltop fort offering spectacular
+                        views over Jodhpur and containing beautiful
+                        historic courtyards and museums.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="attraction-card">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jodhpur%2C_the_Blue_City%2C_Rajasthan.jpg?width=900"
+                    alt="Jodhpur old city">
+
+                <div class="attraction-content">
+
+                    <h3>Blue City</h3>
+
+                    <p>
+                        Walk through the old city and discover
+                        its famous blue-painted houses, local
+                        shops and traditional streets.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="attraction-card">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/20191210%20Jaswant%20Thada%2C%20Jodhpur%201230%207937.jpg?width=900"
+                    alt="Jaswant Thada">
+
+                <div class="attraction-content">
+
+                    <h3>Jaswant Thada</h3>
+
+                    <p>
+                        A beautiful marble memorial surrounded by
+                        peaceful gardens and offering views of the
+                        city and Mehrangarh Fort.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRAVEL GUIDE -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p class="small-title">
+                TRAVEL GUIDE
+            </p>
+
+            <h2>
+                Jodhpur at a Glance
+            </h2>
+
+        </div>
+
+
+        <div class="info-grid">
+
+            <div class="info-box">
+
+                <h3>🍛 Food</h3>
+
+                <p>
+                    Try famous Jodhpuri dishes, Mirchi Vada,
+                    Makhaniya Lassi and traditional Rajasthani food.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>🛍️ Shopping</h3>
+
+                <p>
+                    Explore local markets for handicrafts,
+                    textiles, spices, jewellery and souvenirs.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>📸 Experience</h3>
+
+                <p>
+                    Explore the old blue city, visit Mehrangarh
+                    Fort and enjoy panoramic sunset views.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>TOURISTIC</h2>
+
+                <p>
+                    Explore. Experience. Remember Rajasthan.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="../index.html">Home</a>
+
+                <a href="../index.html#destinations">
+                    Destinations
+                </a>
+
+                <a href="../index.html#about">
+                    About
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Destination</h3>
+
+                <p>Jodhpur</p>
+                <p>Rajasthan, India</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TOURISTIC. All Rights Reserved.
+            </p>
+
+            <p>
+                Student Web Development Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

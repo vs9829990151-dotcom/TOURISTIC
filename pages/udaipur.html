@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore Udaipur - the City of Lakes. Discover palaces, lakes, culture and beautiful views.">
+
+    <title>Udaipur | TOURISTIC</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .city-hero {
+            min-height: 65vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    rgba(10, 20, 25, 0.55),
+                    rgba(10, 20, 25, 0.55)
+                ),
+                url("https://images.unsplash.com/photo-1602643163983-ed0babc39797?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .city-hero-content {
+            max-width: 850px;
+            margin-left: 8%;
+            padding: 70px 20px;
+            color: white;
+        }
+
+        .city-hero h1 {
+            font-size: clamp(48px, 7vw, 80px);
+            line-height: 1;
+            margin: 15px 0 20px;
+        }
+
+        .city-hero p {
+            max-width: 650px;
+            font-size: 18px;
+            color: #f5eee8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #f0b85b;
+            font-weight: 700;
+        }
+
+        .city-intro {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .city-intro h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .city-intro p {
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+
+        .attraction-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .attraction-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .attraction-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .attraction-content {
+            padding: 22px;
+        }
+
+        .attraction-content h3 {
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+
+        .attraction-content p {
+            color: var(--text);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .info-box {
+            padding: 30px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .info-box h3 {
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+
+        @media (max-width: 800px) {
+            .attraction-grid,
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .city-hero-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="../index.html">TOURISTIC</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav id="navMenu">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#destinations">Destinations</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#culture">Culture</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="city-hero">
+
+        <div class="city-hero-content">
+
+            <p class="small-title">
+                CITY OF LAKES
+            </p>
+
+            <h1>Udaipur</h1>
+
+            <p>
+                Discover the romantic beauty of Udaipur,
+                famous for its beautiful lakes, royal palaces
+                and peaceful surroundings.
+            </p>
+
+            <a href="../index.html" class="back-link">
+                ← Back to TOURISTIC
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="section">
+
+        <div class="city-intro">
+
+            <p class="small-title">
+                ABOUT UDAIPUR
+            </p>
+
+            <h2>
+                The City of Lakes
+            </h2>
+
+            <p>
+                Udaipur is one of Rajasthan's most beautiful
+                destinations. The city is surrounded by the
+                Aravalli Hills and is known for its lakes,
+                palaces and historic architecture.
+            </p>
+
+            <p>
+                Its peaceful atmosphere, colourful streets
+                and royal heritage make Udaipur a popular
+                destination for travellers.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ATTRACTIONS -->
+
+    <section class="section destinations">
+
+        <div class="section-title">
+
+            <p class="small-title">
+                MUST VISIT
+            </p>
+
+            <h2>
+                Famous Attractions
+            </h2>
+
+        </div>
+
+
+        <div class="attraction-grid">
+
+            <article class="attraction-card">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/City_Palace_by_lake_Pichola%2C_Udaipur.jpg?width=900"
+                    alt="City Palace Udaipur">
+
+                <div class="attraction-content">
+
+                    <h3>City Palace</h3>
+
+                    <p>
+                        A magnificent palace complex overlooking
+                        Lake Pichola, known for its architecture,
+                        courtyards and royal history.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="attraction-card">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lake_view_of_City_Palace_%28Udaipur%29%2C_Rajasthan%2C_India_-2.jpg?width=900"
+                    alt="Lake Pichola Udaipur">
+
+                <div class="attraction-content">
+
+                    <h3>Lake Pichola</h3>
+
+                    <p>
+                        Enjoy peaceful boat rides and beautiful
+                        views of the surrounding palaces and hills.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="attraction-card">
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Uda%C3%AFpur_palais_de_la_mousson.jpg?width=900"
+                    alt="Sajjangarh Palace">
+
+                <div class="attraction-content">
+
+                    <h3>Monsoon Palace</h3>
+
+                    <p>
+                        A hilltop palace offering panoramic views
+                        of Udaipur and its surrounding landscape.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRAVEL GUIDE -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p class="small-title">
+                TRAVEL GUIDE
+            </p>
+
+            <h2>
+                Udaipur at a Glance
+            </h2>
+
+        </div>
+
+
+        <div class="info-grid">
+
+            <div class="info-box">
+
+                <h3>🚤 Experience</h3>
+
+                <p>
+                    Take a boat ride on Lake Pichola and enjoy
+                    the beautiful views around the lake.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>🍛 Food</h3>
+
+                <p>
+                    Try traditional Rajasthani thali,
+                    Dal Baati Churma and local snacks.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>📸 Best Views</h3>
+
+                <p>
+                    Explore lakeside areas, old-city streets
+                    and hilltop viewpoints around the city.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>TOURISTIC</h2>
+
+                <p>
+                    Explore. Experience. Remember Rajasthan.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="../index.html">Home</a>
+
+                <a href="../index.html#destinations">
+                    Destinations
+                </a>
+
+                <a href="../index.html#about">
+                    About
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Destination</h3>
+
+                <p>Udaipur</p>
+                <p>Rajasthan, India</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TOURISTIC. All Rights Reserved.
+            </p>
+
+            <p>
+                Student Web Development Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

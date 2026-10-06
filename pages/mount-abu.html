@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore Mount Abu - Rajasthan's beautiful hill station. Discover Nakki Lake, Dilwara Temples, viewpoints and peaceful landscapes.">
+
+    <title>Mount Abu | TOURISTIC</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .city-hero {
+            min-height: 65vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    rgba(15, 25, 20, 0.52),
+                    rgba(15, 25, 20, 0.52)
+                ),
+                url("https://images.unsplash.com/photo-1626014303757-5f6f7b7e7e5a?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .city-hero-content {
+            max-width: 850px;
+            margin-left: 8%;
+            padding: 70px 20px;
+            color: white;
+        }
+
+        .city-hero h1 {
+            font-size: clamp(48px, 7vw, 80px);
+            line-height: 1;
+            margin: 15px 0 20px;
+        }
+
+        .city-hero p {
+            max-width: 650px;
+            font-size: 18px;
+            color: #f5eee8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #f0b85b;
+            font-weight: 700;
+        }
+
+        .city-intro {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .city-intro h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .city-intro p {
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+
+        .attraction-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .attraction-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .attraction-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .attraction-content {
+            padding: 22px;
+        }
+
+        .attraction-content h3 {
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+
+        .attraction-content p {
+            color: var(--text);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .info-box {
+            padding: 30px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .info-box h3 {
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+
+        @media (max-width: 800px) {
+            .attraction-grid,
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .city-hero-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="../index.html">TOURISTIC</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav id="navMenu">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#destinations">Destinations</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#culture">Culture</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="city-hero">
+
+        <div class="city-hero-content">
+
+            <p class="small-title">
+                HILL STATION OF RAJASTHAN
+            </p>
+
+            <h1>Mount Abu</h1>
+
+            <p>
+                Escape into the peaceful hills of Mount Abu,
+                Rajasthan's famous hill station known for its
+                lakes, temples, forests and beautiful viewpoints.
+            </p>
+
+            <a href="../index.html" class="back-link">
+                ← Back to TOURISTIC
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="section">
+
+        <div class="city-intro">
+
+            <p class="small-title">
+                ABOUT MOUNT ABU
+            </p>
+
+            <h2>
+                Rajasthan's Hill Escape
+            </h2>
+
+            <p>
+                Mount Abu is the only major hill station in
+                Rajasthan. Located in the Aravalli Range,
+                it offers a refreshing contrast to the desert
+                landscapes of the state.
+            </p>
+
+            <p>
+                Its green surroundings, peaceful lakes,
+                ancient temples and scenic viewpoints make
+                it a popular destination for travellers.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ATTRACTIONS -->
+
+    <section class="section destinations">
+
+        <div class="section-title">
+
+            <p class="small-title">
+                MUST VISIT
+            </p>
+
+            <h2>
+                Famous Attractions
+            </h2>
+
+        </div>
+
+
+        <div class="attraction-grid">
+
+            <article class="attraction-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1630825828191-6f14ad0b84b8?auto=format&fit=crop&w=900&q=80"
+                    alt="Nakki Lake Mount Abu">
+
+                <div class="attraction-content">
+
+                    <h3>Nakki Lake</h3>
+
+                    <p>
+                        A beautiful lake surrounded by hills,
+                        gardens and viewpoints, perfect for a
+                        peaceful evening and boating experience.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="attraction-card">
+
+                <img
+    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Dilwara%20temple%20in%20mount%20abu.jpg?width=900"
+    alt="Dilwara Temples"
+>
+
+                <div class="attraction-content">
+
+                    <h3>Dilwara Temples</h3>
+
+                    <p>
+                        A remarkable group of Jain temples known
+                        for their detailed marble architecture and
+                        impressive craftsmanship.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="attraction-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+                    alt="Mount Abu Hills">
+
+                <div class="attraction-content">
+
+                    <h3>Guru Shikhar</h3>
+
+                    <p>
+                        The highest point in Rajasthan, offering
+                        panoramic views of the Aravalli mountains
+                        and surrounding landscapes.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRAVEL GUIDE -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p class="small-title">
+                TRAVEL GUIDE
+            </p>
+
+            <h2>
+                Mount Abu at a Glance
+            </h2>
+
+        </div>
+
+
+        <div class="info-grid">
+
+            <div class="info-box">
+
+                <h3>🌄 Nature</h3>
+
+                <p>
+                    Enjoy peaceful hills, forests, viewpoints
+                    and beautiful natural surroundings.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>🍛 Food</h3>
+
+                <p>
+                    Try traditional Rajasthani food along with
+                    snacks and popular local dishes.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>📸 Experience</h3>
+
+                <p>
+                    Visit Nakki Lake, explore the temples and
+                    enjoy sunrise or sunset from the viewpoints.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>TOURISTIC</h2>
+
+                <p>
+                    Explore. Experience. Remember Rajasthan.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="../index.html">Home</a>
+
+                <a href="../index.html#destinations">
+                    Destinations
+                </a>
+
+                <a href="../index.html#about">
+                    About
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Destination</h3>
+
+                <p>Mount Abu</p>
+                <p>Rajasthan, India</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TOURISTIC. All Rights Reserved.
+            </p>
+
+            <p>
+                Student Web Development Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
